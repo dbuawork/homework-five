@@ -14,3 +14,9 @@ print("Сума негативних чисел:", negative)
 even_num = sum(x for x in random_numbers if x % 2 == 0)
 print("Сума парних чисел:", even_num)
 
+# Cуми непарних чисел
+sum_odd = sum(x for x in random_numbers if x % 2 != 0)
+print("Сума непарних чисел:", sum_odd)
+
+
+
