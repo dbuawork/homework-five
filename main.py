@@ -18,5 +18,13 @@ print("Сума парних чисел:", even_num)
 sum_odd = sum(x for x in random_numbers if x % 2 != 0)
 print("Сума непарних чисел:", sum_odd)
 
+# Добуток елементів з кратними індексами 3
+index_3 = 1
+for i in range(0, len(random_numbers), 3):
+    index_3 *= random_numbers[i]
+print("Добуток елементів з кратними індексами 3:", index_3)
+
+
+
 
 
