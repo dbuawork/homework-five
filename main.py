@@ -10,3 +10,7 @@ print("Список випадкових чисел:", random_numbers)
 negative = sum(x for x in random_numbers if x < 0)
 print("Сума негативних чисел:", negative)
 
+# Cумма парних чисел
+even_num = sum(x for x in random_numbers if x % 2 == 0)
+print("Сума парних чисел:", even_num)
+
