@@ -24,6 +24,22 @@ for i in range(0, len(random_numbers), 3):
     index_3 *= random_numbers[i]
 print("Добуток елементів з кратними індексами 3:", index_3)
 
+# Знаходження мінімального та максимального елементів
+min_value = min(random_numbers)
+max_value = max(random_numbers)
+
+# Добуток елементів між мінімальним та максимальним елементом
+min_index = random_numbers.index(min_value)
+max_index = random_numbers.index(max_value)
+min_and_max = 1
+for i in range(min(min_index, max_index) + 1, max(min_index, max_index)):
+    min_and_max *= random_numbers[i]
+print("Добуток елементів між мінімальним та максимальним елементом:", min_and_max)
+
+
+
+
+
 
 
 
