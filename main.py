@@ -36,6 +36,18 @@ for i in range(min(min_index, max_index) + 1, max(min_index, max_index)):
     min_and_max *= random_numbers[i]
 print("Добуток елементів між мінімальним та максимальним елементом:", min_and_max)
 
+# Знаходження індексів першого та останнього позитивного елемента
+first_positive_index = next((i for i, x in enumerate(random_numbers) if x > 0), None)
+last_positive_index = next((i for i, x in enumerate(reversed(random_numbers)) if x > 0), None)
+
+# Обчислення суми елементів між першим та останнім позитивними елементами
+if first_positive_index is not None and last_positive_index is not None:
+    last_positive_index = len(random_numbers) - last_positive_index - 1
+    sum_between_positives = sum(random_numbers[first_positive_index + 1:last_positive_index])
+    print("Сума елементів між першим та останнім позитивними елементами:", sum_between_positives)
+else:
+    print("В списку немає позитивних елементів або їх замало.")
+
 
 
 
