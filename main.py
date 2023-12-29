@@ -66,3 +66,7 @@ print("Список парних чисел:", even_numbers)
 # Створення списку цілих, що містить лише непарні числа
 odd_numbers = [x for x in random_numbers if x % 2 != 0]
 print("Список непарних чисел:", odd_numbers)
+
+# Створення списку цілих, що містить лише негативні числа
+negative_numbers = [x for x in random_numbers if x < 0]
+print("Список негативних чисел:", negative_numbers)
