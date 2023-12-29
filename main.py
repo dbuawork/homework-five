@@ -1,7 +1,8 @@
 import random
-num = []
-for i in range(10):
-    x=random.randint(-100,100)
-    num.append(x)
-print(num)
-print("Сумма негативних чисел: ", x)
+
+# Заповнення списку випадковими числами
+random_numbers = [random.randint(-100, 100) for _ in range(10)]
+
+# Виведення списку
+print("Список випадкових чисел:", random_numbers)
+
