@@ -58,3 +58,7 @@ random_numbers = [random.randint(-100, 100) for _ in range(10)]
 
 # Виведення списку
 print("Список випадкових чисел:", random_numbers)
+
+# Створення списку цілих, що містить лише парні числа
+even_numbers = [x for x in random_numbers if x % 2 == 0]
+print("Список парних чисел:", even_numbers)
